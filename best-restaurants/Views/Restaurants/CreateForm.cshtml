@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}<form action='/restaurants' method='post'>
+
+  <label for='restaurant-name'>Restaurant Name</label>
+  <input id='restaurant-name' name='restaurant-name' type='text'>
+  <label for='restaurant-city'>Restaurant City</label>
+  <input id='restaurant-city' name='restaurant-city' type='text'>
+  <select name="cuisine">
+    @foreach (var cuisine in Model)
+    {
+      <option value=@cuisine.GetId()>@cuisine.GetName()</option>
+    }
+  </select>
+
+  <button type='submit'>Add Restaurant</button>
+</form>
