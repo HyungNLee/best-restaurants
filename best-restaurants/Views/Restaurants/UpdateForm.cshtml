@@ -4,7 +4,7 @@
 <h1>Update Form</h1>
 <hr />
 <h2>Edit item: @Model["restaurant"].GetName()</h2>
-<form action="/restaurant/@Model["restaurant"].GetId()/update" method="post">
+<form action="/restaurants/@Model["restaurant"].GetId()/update" method="post">
     <label for="new-name">Name:</label>
     <input type="text" name="new-name" value="@Model["restaurant"].GetName()">
     <label for="new-city">City:</label>
@@ -17,5 +17,5 @@
     </select>
     <button type="submit">Edit</button>
 </form>
-<button class="btn btn-dark"><a href=/restaurants/@Model["restaurant"].GetId()/delete>Delete</a></button>
-<button class="btn btn-dark"><a href="/restaurants">Return to Restaurant Index</a></button>
+<a class="btn btn-dark" href=/restaurants/@Model["restaurant"].GetId()/delete>Delete</a>
+<a class="btn btn-dark" href="/restaurants">Return to Restaurant Index</a>

@@ -8,6 +8,7 @@
 <h4><a href='/restaurants/@restaurant.GetId()'>@restaurant.GetName()</a></h4>
 }
 
-<button class="btn btn-info"><a href='/restaurants/new'>Add restaurants</a></button>
-<button class="btn btn-info"><a href="/cuisines">Back to Category List</a></button>
-<button class="btn btn-info"><a href='/'>back Home</a></button>
+<a class="btn btn-info" href='/restaurants/new'>Add restaurants</a>
+<a class="btn btn-info" href="/cuisines">Back to Cuisine List</a>
+<a class="btn btn-info" href="/cuisines/@Model.GetId()/delete">Delete this Cuisine</a>
+<a class="btn btn-info" href='/'>back Home</a>
